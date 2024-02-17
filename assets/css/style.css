@@ -1,0 +1,28 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: large;
+  width: 15rem;
+  height: 3rem;
+  margin: 2rem;
+  background-color: rgb(232, 221, 102);
+  border-color: rgb(127, 231, 98);
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(127, 231, 98);
+  color: rgb(0, 0, 0);
+  border-color: rgb(232, 221, 102);
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
