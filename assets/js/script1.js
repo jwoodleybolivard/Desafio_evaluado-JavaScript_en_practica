@@ -12,16 +12,34 @@ document.getElementById("formulario").addEventListener("submit", function (event
     if (!regex.test(nombreEntrada) || !regex.test(asuntoEntrada) || !regex.test(mensajeEntrada)) {
         // Si al menos un campo no cumple con la expresión regular
 
-        // Validar y mostrar mensajes de error para campos individuales
+        // Validar
         if (!regex.test(nombreEntrada)) {
+            // Limpiar mensajes de error y exito previos
+            document.querySelector(".errorNombre").textContent = "";
+            document.querySelector(".errorAsunto").textContent = "";
+            document.querySelector(".errorMensaje").textContent = "";
+            document.querySelector(".resultado").textContent = "";
+            // Mostrar mensaje de error
             document.querySelector(".errorNombre").textContent = "El nombre es requerido";
         }
 
         if (!regex.test(asuntoEntrada)) {
+            // Limpiar mensajes de error y exito previos
+            document.querySelector(".errorNombre").textContent = "";
+            document.querySelector(".errorAsunto").textContent = "";
+            document.querySelector(".errorMensaje").textContent = "";
+            document.querySelector(".resultado").textContent = "";
+            // Mostrar mensaje de error
             document.querySelector(".errorAsunto").textContent = "El asunto es requerido";
         }
 
         if (!regex.test(mensajeEntrada)) {
+            // Limpiar mensajes de error y exito previos
+            document.querySelector(".errorNombre").textContent = "";
+            document.querySelector(".errorAsunto").textContent = "";
+            document.querySelector(".errorMensaje").textContent = "";
+            document.querySelector(".resultado").textContent = "";
+            // Mostrar mensaje de error
             document.querySelector(".errorMensaje").textContent = "El mensaje es requerido";
         }
 
