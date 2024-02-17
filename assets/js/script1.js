@@ -14,30 +14,21 @@ document.getElementById("formulario").addEventListener("submit", function (event
 
         // Validar
         if (!regex.test(nombreEntrada)) {
-            // Limpiar mensajes de error y exito previos
-            document.querySelector(".errorNombre").textContent = "";
-            document.querySelector(".errorAsunto").textContent = "";
-            document.querySelector(".errorMensaje").textContent = "";
+            // Limpiar mensajes de exito previos
             document.querySelector(".resultado").textContent = "";
             // Mostrar mensaje de error
             document.querySelector(".errorNombre").textContent = "El nombre es requerido";
         }
 
         if (!regex.test(asuntoEntrada)) {
-            // Limpiar mensajes de error y exito previos
-            document.querySelector(".errorNombre").textContent = "";
-            document.querySelector(".errorAsunto").textContent = "";
-            document.querySelector(".errorMensaje").textContent = "";
+            // Limpiar mensajes de exito previos
             document.querySelector(".resultado").textContent = "";
             // Mostrar mensaje de error
             document.querySelector(".errorAsunto").textContent = "El asunto es requerido";
         }
 
         if (!regex.test(mensajeEntrada)) {
-            // Limpiar mensajes de error y exito previos
-            document.querySelector(".errorNombre").textContent = "";
-            document.querySelector(".errorAsunto").textContent = "";
-            document.querySelector(".errorMensaje").textContent = "";
+            // Limpiar mensajes de exito previos
             document.querySelector(".resultado").textContent = "";
             // Mostrar mensaje de error
             document.querySelector(".errorMensaje").textContent = "El mensaje es requerido";
@@ -52,7 +43,6 @@ document.getElementById("formulario").addEventListener("submit", function (event
         document.querySelector(".errorNombre").textContent = "";
         document.querySelector(".errorAsunto").textContent = "";
         document.querySelector(".errorMensaje").textContent = "";
-        document.querySelector(".resultado").textContent = "";
 
         // Mostrar mensaje de éxito
         document.querySelector(".resultado").textContent = "Mensaje enviado con éxito !!!";
