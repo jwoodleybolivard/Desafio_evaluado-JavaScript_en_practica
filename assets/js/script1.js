@@ -30,10 +30,11 @@ document.getElementById("formulario").addEventListener("submit", function (event
     } else {
         // Si todos los campos cumplen con la expresión regular
 
-        // Limpiar mensajes de error previos
+        // Limpiar mensajes de error y exito previos
         document.querySelector(".errorNombre").textContent = "";
         document.querySelector(".errorAsunto").textContent = "";
         document.querySelector(".errorMensaje").textContent = "";
+        document.querySelector(".resultado").textContent = "";
 
         // Mostrar mensaje de éxito
         document.querySelector(".resultado").textContent = "Mensaje enviado con éxito !!!";
